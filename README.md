@@ -8,11 +8,11 @@ Vale ressaltar que o projeto também visa a utilização de medidas dinâmicas c
 ======= ETAPAS DO PROJETO =======
 1)   [ ] - Definir a estrutura básica do html, imagens que serão utilizada, variaveis, fontes, tamanho para os paragrafos e titulos. 
 
-1.1) [ ] - Definir espaçamentos defaults para margens, paddings, tamanho de tela e displays
-1.2) [ ] - Definir as todas as sessões da landing page no html.
+1) [ ] - Definir espaçamentos defaults para margens, paddings, tamanho de tela e displays
+1) [ ] - Definir as todas as sessões da landing page no html.
 
 2)   [ ] - Criação do menu
-2.1) [ ] - Implementar animações no menu.
+2) [ ] - Implementar animações no menu.
 
 3)   [ ] - Criar sessão de introdução
 4)   [ ] - Criar sessão de top 3
