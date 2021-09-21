@@ -6,9 +6,9 @@ O intuito do projeto é treinar a implementação de tags semânticas do HTML5 e
 Vale ressaltar que o projeto também visa a utilização de medidas dinâmicas como: %, rem, vh e vw.
 
 ======= ETAPAS DO PROJETO =======
-1)   [ ] - Definir a estrutura básica do html, imagens que serão utilizada, variaveis, fontes, tamanho para os paragrafos e titulos. 
+1)   [X] - Definir a estrutura básica do html, imagens que serão utilizada, variaveis, fontes, tamanho para os paragrafos e titulos. 
 
-1) [ ] - Definir espaçamentos defaults para margens, paddings, tamanho de tela e displays
+1) [X] - Definir espaçamentos defaults para margens, paddings, tamanho de tela e displays
 1) [ ] - Definir as todas as sessões da landing page no html.
 
 2)   [ ] - Criação do menu
