@@ -1,0 +1,75 @@
+:root {
+  /* ==== CORES DO SITE ====*/
+  --color: 126; /* VERDE*/
+  --primary-color: hsl(var(--color), 75%, 17%);
+  --white-color: hsl(0, 0%, 90%);
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+}
+
+/*Fonte dos titulos*/
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+/*Tamanho dos titulos*/
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 5.5rem;
+}
+
+h3 {
+  font-size: 5rem;
+
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+/*Fundo verde com cor branca no texto*/
+.main-bg {
+  background-image: url('../_img/main-bg.svg');
+  background-size: cover;
+  background-position: center center;
+  color:  var(--white-color);
+}
+/*FUndo  branco fonte verde*/
+.white-bg {
+  color: var(--primary-color);
+  background-color: white;
+}
+/*Margin, espaçamento e  altura maxima */
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.landing-section {
+  min-height: 100vh;
+}
