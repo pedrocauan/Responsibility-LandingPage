@@ -2,9 +2,9 @@
   /* ==== CORES DO SITE ====*/
   --color: 126; /* VERDE*/
   --primary-color: hsl(var(--color), 75%, 17%);
+  --secoudary-color: hsl(125, 24.7%, 42.2%);
   --white-color: hsl(0, 0%, 90%);
-
-
+  --gap: 3rem; /*Espaçamento*/
 }
 
 * {
@@ -14,7 +14,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /*1rem = 10px*/
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,7 +24,12 @@ body {
 }
 
 /*Fonte dos titulos*/
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
 }
 /*Tamanho dos titulos*/
@@ -38,7 +44,6 @@ h2 {
 
 h3 {
   font-size: 5rem;
-
 }
 
 h4 {
@@ -52,12 +57,16 @@ h5 {
 h6 {
   font-size: 3.5rem;
 }
+
+a {
+  text-decoration: none;
+}
 /*Fundo verde com cor branca no texto*/
 .main-bg {
   background-image: url('../_img/main-bg.svg');
   background-size: cover;
   background-position: center center;
-  color:  var(--white-color);
+  color: var(--white-color);
 }
 /*FUndo  branco fonte verde*/
 .white-bg {
@@ -68,8 +77,72 @@ h6 {
 .main-content {
   max-width: 120rem;
   margin: 0 auto;
+  padding: var(--gap);
 }
 
 .landing-section {
-  min-height: 100vh;
+  min-height: 100vh; /*Faz com que cada sessão da landing page ocupe toda a tela*/
+}
+
+/*======================================================*
+ *                        MENU                          *
+ *======================================================*/
+
+/*Deixa o menu fixo*/
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 0.1rem solid var(--white-color);
+}
+
+/*Separa a logo  do menu um em cada canto*/
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/*Deixa os elementos do menu um do lado do outro*/
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+/*define a como block para que ele defina o tamanho da barra do menu*/
+.menu ul a {
+  display: block;
+  color: inherit;
+  padding: 2rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+}
+/*Criando animação ao colocar o cursor*/
+.menu ul a::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 0%; /*Oculta a barra*/
+  background-color: var(--secoudary-color);
+  height: 0.2rem;
+  transition: all 300ms ease-in-out;
+}
+/* Mostra a barra quando tiver com o cursor em cima*/
+.menu ul a:hover::after {
+  width: 50%;
+  left: 25%;
+}
+/*Definições do logo*/
+.logo {
+  max-width: 30rem;
+  width: 100%;
+}
+
+.logo img {
+  height: 5rem;
 }

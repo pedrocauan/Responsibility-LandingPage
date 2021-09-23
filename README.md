@@ -13,8 +13,8 @@ Vale ressaltar que o projeto também visa a utilização de medidas dinâmicas c
 1.  [x] - Definir espaçamentos defaults para margens, paddings, tamanho de tela e displays
 1.  [x] - Definir as todas as sessões da landing page no html.
 
-1.  [ ] - Criação do menu
-1.  [ ] - Implementar animações no menu.
+1.  [x] - Criação do menu
+1.  [x] - Implementar animações no menu.
 
 1.  [ ] - Criar sessão de introdução
 1.  [ ] - Criar sessão de top 3
