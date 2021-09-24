@@ -41,6 +41,9 @@ h1 {
 
 h2 {
   font-size: 5.5rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 h3 {
@@ -59,8 +62,8 @@ h6 {
   font-size: 3.5rem;
 }
 
-a {
-  text-decoration: none;
+p {
+  margin-bottom: 3rem;
 }
 /*Fundo verde com cor branca no texto*/
 .main-bg {
@@ -122,6 +125,7 @@ a {
   text-transform: capitalize;
   font-weight: 700;
   position: relative;
+  text-decoration: none;
 }
 /*Criando animação ao colocar o cursor*/
 .menu ul a::after {
@@ -136,8 +140,8 @@ a {
 }
 /* Mostra a barra quando tiver com o cursor em cima*/
 .menu ul a:hover::after {
-  width: 50%;
-  left: 25%;
+  width: 50%; /*Mostra a barra*/
+  left: 25%; /*Faz com que a animaçao comece do meio e va ate as bordas*/
 }
 /*Definições do logo*/
 .logo {
@@ -177,13 +181,72 @@ a {
 }
 /*Titulo */
 .intro-text-content h1 {
-  font-size: 6rem;
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1;
 }
-
+/*Imagem da tartaruga*/
 .intro-img img {
   max-width: 100%;
   height: auto;
+}
+
+/*=========================================================*
+ *                      TARTARUGAS?                        *
+ *=========================================================*/
+/*Flex que centraliza o conteúdo*/
+.turtle-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+/*Guarda a imagem das tartarugas e o titulo da sessão*/
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+/*Tamanho das tartarugas que ficam ao lado do titulo*/
+.turtle-float {
+  max-width: 10rem;
+}
+
+.turtle-float img {
+  width: 100%;
+}
+/*Inverte a tartaruga da direita*/
+.title h2 + .turtle-float img {
+  transform: rotatey(180deg);
+}
+
+/*largura maxima do conteúdo e tipo de alinhamento do texto*/
+.turtle-description-content {
+  max-width: 64rem;
+  text-align: justify;
+}
+
+.turtle-description-content h2 {
+  text-align: center;
+}
+/*Tira a margem apenas do primeiro paragrafo para que o addres nao fique descolado*/
+.turtle-description .title + p {
+  margin-bottom: 0;
+}
+
+/*Parte que linka pro site da lei do ibama*/
+address {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+/*Deixando os links com a cor padrao*/
+.turtle-description-content a {
+  color: inherit;
+}
+/*Alterando a cor do enfase*/
+.turtle-description-content em {
+  font-weight: 700;
 }
