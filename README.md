@@ -16,7 +16,7 @@ Vale ressaltar que o projeto também visa a utilização de medidas dinâmicas c
 1.  [x] - Criação do menu.
 1.  [x] - Implementar animações no MENU.
 
-1.  [ ] - Criar sessão de introdução
+1.  [x] - Criar sessão de introdução
 1.  [ ] - Criar sessão de top 3
 1.  [ ] - Criar sessão gallery (galeria com fotos)
 1.  [ ] - Criar sessão work
