@@ -21,6 +21,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
+  line-height: 1.5;
 }
 
 /*Fonte dos titulos*/
@@ -96,6 +97,7 @@ a {
   right: 0;
   width: 100%;
   border-bottom: 0.1rem solid var(--white-color);
+  z-index: 1;
 }
 
 /*Separa a logo  do menu um em cada canto*/
@@ -116,7 +118,7 @@ a {
   display: block;
   color: inherit;
   padding: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: capitalize;
   font-weight: 700;
   position: relative;
@@ -144,5 +146,44 @@ a {
 }
 
 .logo img {
-  height: 5rem;
+  height: auto;
+  max-height: 5rem;
+}
+/*Como o menu é fixo, é necessário dar um espaço entre ele e a section*/
+.menu-space {
+  height: 6.3rem;
+}
+
+/*=========================================================*
+ *                      INTRO                              *
+ *=========================================================*/
+
+/*Cria uma grid  com duas colunas*/
+.intro-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  height: 100vh;
+  /*subindo um pouco o conteúdo pra compensar o menu-space*/
+  position: relative;
+  top: -8rem;
+}
+/*Deixa os textos alinhados no centro do seu fragmento da grid*/
+.intro-text-content,
+.intro-img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+/*Titulo */
+.intro-text-content h1 {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.intro-img img {
+  max-width: 100%;
+  height: auto;
 }
