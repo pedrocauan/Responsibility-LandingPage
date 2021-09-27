@@ -167,10 +167,10 @@ p {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
-  height: 100vh;
+  min-height: 100vh;
   /*subindo um pouco o conteúdo pra compensar o menu-space*/
   position: relative;
-  top: -8rem;
+  top: -8%;
 }
 /*Deixa os textos alinhados no centro do seu fragmento da grid*/
 .intro-text-content,
@@ -207,7 +207,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 10%;
 }
 /*Tamanho das tartarugas que ficam ao lado do titulo*/
 .turtle-float {
@@ -249,4 +249,45 @@ address {
 /*Alterando a cor do enfase*/
 .turtle-description-content em {
   font-weight: 700;
+}
+
+/*===========================================* 
+ *                  MOTIVOS                  *
+ *===========================================*/
+
+.motivos-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 120rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  counter-reset: grid-counter; /*contador que vai ser usado no pseudo elemento*/
+}
+/*Diminuindo tamanho dos sub-titulos*/
+.grid h3 {
+  font-size: 3rem;
+  position: relative; /*Segura o ::before dentro dele*/
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+}
+/*Pseudo elemento que vai ter os numeros 1, 2 e 3 do lado de cada motivo*/
+.grid h3::before {
+  counter-increment: grid-counter;
+  content: counter(grid-counter); /*Numero 1,2 e 3*/
+  position: absolute;
+  font-size: 8rem;
+  font-style: italic;
+  top: -4rem;
+  left: -2rem;
+  transform: rotate(5deg); /*Rodando os numeros*/
+}
+
+.description {
+  margin-bottom: 10rem;
 }
