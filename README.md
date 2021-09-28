@@ -19,7 +19,7 @@ Vale ressaltar que o projeto também visa a utilização de medidas dinâmicas c
 1.  [x] - Criar sessão de introdução
 1.  [x] - Criar sessão "Tartarugas?"
 1.  [x] - Criar sessão "motivos"
-1.  [ ] - Criar sessão gallery (galeria com fotos)
+1.  [x] - Criar sessão de fotos (galeria com fotos)
 1.  [ ] - Criar sessão work
 1.  [ ] - Criar formulário de contato
 1.  [ ] - Implementação do layout responsivo para dispositivos mobile
