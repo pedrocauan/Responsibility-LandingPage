@@ -270,14 +270,14 @@ address {
   counter-reset: grid-counter; /*contador que vai ser usado no pseudo elemento*/
 }
 /*Diminuindo tamanho dos sub-titulos*/
-.grid h3 {
+.grid.motivos h3 {
   font-size: 3rem;
   position: relative; /*Segura o ::before dentro dele*/
   padding-left: 5rem;
   padding-bottom: 3rem;
 }
 /*Pseudo elemento que vai ter os numeros 1, 2 e 3 do lado de cada motivo*/
-.grid h3::before {
+.grid.motivos h3::before {
   counter-increment: grid-counter;
   content: counter(grid-counter); /*Numero 1,2 e 3*/
   position: absolute;
@@ -290,4 +290,60 @@ address {
 
 .description {
   margin-bottom: 10rem;
+}
+
+/*================================================*
+ *                      FOTOS                     *
+ *================================================*/
+
+.images-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 120rem;
+}
+
+/*Ajustando titulo da sessão*/
+.main-content.images-content .title {
+  justify-content: stretch;
+}
+/*Definindo tamanho das imagens*/
+.images-content .grid img {
+  height: 36rem;
+  width: 36rem;
+}
+/*Alinhando titulo a foto*/
+.grid img + h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+/*Efeito na imagem*/
+.image {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.image h3 {
+  word-wrap: nowrap;
+}
+
+.image img {
+  transition: all 300ms ease-in-out;
+  margin-bottom: 17%;
+}
+
+.image img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+image img::before {
+  content: '';
+  height: 2rem;
+  width: 2rem;
+  top: 0;
+  left: 0;
 }
