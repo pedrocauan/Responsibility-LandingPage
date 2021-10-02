@@ -326,24 +326,59 @@ address {
   max-height: 36rem;
   overflow: hidden;
 }
-
-.image h3 {
-  word-wrap: nowrap;
-}
-
+/*Transição*/
 .image img {
   transition: all 300ms ease-in-out;
-  margin-bottom: 17%;
 }
 
+/*Efeito ao passar o mouse*/
 .image img:hover {
   transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+/*======================================================*
+ *               TABELA DE ESPECIES                     *
+ *======================================================*/
+/*Espaçamentos dos paragrafos*/
+.especies .main-content p {
+  margin-bottom: 5rem;
+}
 
-image img::before {
-  content: '';
-  height: 2rem;
-  width: 2rem;
-  top: 0;
-  left: 0;
+/*alinha todos os textos da tabela*/
+.especies .main-content table {
+  text-align: center;
+}
+/*Deixa a tabela responsiva*/
+.responsive-table {
+  max-width: 64rem;
+  width: 100%;
+}
+/*coloca o padding em porcentagem para a tabela se ajustar automaticamente*/
+.especie-table tbody td,
+.especie-table thead th {
+  padding: 5% 10%;
+}
+/*deixa o conteúdo vazado apenas no ultimo elemento da tabela*/
+.last-coluwn {
+  word-wrap: break-word;
+}
+/*Cor da tabela*/
+.especie-table {
+  background-color: hsl(126, 40%, 20%);
+  border-spacing: 0;
+}
+/*Fonte dos titulos da tabela*/
+.especie-table th {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+/*Coloca outra tonalidade de cor nas linhas pares*/
+.especie-table tr:nth-child(even),
+thead {
+  background-color: hsl(126, 40%, 21.5%);
+}
+/*Descrição da tabela*/
+.especie-table caption {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }

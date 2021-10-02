@@ -20,7 +20,7 @@ Vale ressaltar que o projeto também visa a utilização de medidas dinâmicas c
 1.  [x] - Criar sessão "Tartarugas?"
 1.  [x] - Criar sessão "motivos"
 1.  [x] - Criar sessão de fotos (galeria com fotos)
-1.  [ ] - Criar sessão work
+1.  [x] - Criar tabela com as especies de tartaruga
 1.  [ ] - Criar formulário de contato
 1.  [ ] - Implementação do layout responsivo para dispositivos mobile
 1.  [ ] - Correção de bugs e revisão do front end
