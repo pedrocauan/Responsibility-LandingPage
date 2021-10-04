@@ -1,0 +1,51 @@
+/*Deixando o font-size do html mais confortável*/
+html {
+  font-size: 55%;
+}
+
+/*Quebra as grids, deixa elas com 1 coluna*/
+.intro-content,
+.grid {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+/*Deixa a tartaruga antes do texto*/
+.intro-text-content {
+  order: 2;
+  margin-top: 0;
+}
+
+/*Diminuindo o tamanho da imagem*/
+.intro-img img {
+  min-width: 20rem;
+  min-height: 20rem;
+  max-width: 40rem;
+  max-height: 40rem;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+/*Deixando as imagens da galeria ocupando toda a largura da tela*/
+.grid .image img {
+  width: 100%;
+}
+
+/*Arrumando formulário*/
+#contact .intro-img,
+#contact .intro-img img {
+  display: none; /*Some com a tartaruga*/
+}
+
+#contact .intro-text-content {
+  order: 1; /*Deixa  o titulo antes do formulário*/
+  margin-top: 8rem;
+}
+
+#contact .contact-form {
+  order: 2;
+}
