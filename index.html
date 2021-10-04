@@ -22,6 +22,21 @@
   </head>
   <body>
     <!--MENU-->
+
+    <input
+      type="checkbox"
+      id="close-menu"
+      class="close-menu"
+      aria-label="fecha o menu"
+      role="button"
+      checked
+    />
+    <label
+      for="close-menu"
+      class="close-menu-label"
+      title="fecha o menu"
+      ch
+    ></label>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
         <!--LOGO DO SITE-->
@@ -35,7 +50,7 @@
         </div>
         <!--ITENS DO MENU-->
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#intro">intro</a></li>
             <li><a href="#turtle-description">tartarugas?</a></li>
             <li><a href="#motivos">motivos</a></li>

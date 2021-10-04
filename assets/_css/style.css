@@ -492,3 +492,7 @@ body .full-width {
   font-weight: 900;
   font-family: 'montserrat', 'sans-serif';
 }
+
+.close-menu {
+  display: none;
+}
