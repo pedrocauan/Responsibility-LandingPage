@@ -23,4 +23,4 @@ Vale ressaltar que o projeto também visa a utilização de medidas dinâmicas c
 1.  [x] - Criar tabela com as especies de tartaruga
 1.  [x] - Criar formulário de contato e rodapé
 1.  [x] - Implementação do layout responsivo para dispositivos mobile
-1.  [ ] - Correção de bugs e revisão do front end
+1.  [x] - Correção de bugs e revisão do front end

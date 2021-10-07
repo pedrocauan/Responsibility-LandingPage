@@ -316,8 +316,8 @@ address {
 }
 /*Definindo tamanho das imagens*/
 .images-content .grid img {
-  height: 36rem;
   width: 36rem;
+  height: 36rem;
 }
 /*Alinhando titulo a foto*/
 .grid img + h3 {
@@ -350,18 +350,20 @@ address {
 }
 
 /*alinha todos os textos da tabela*/
+
 .especies .main-content table {
   text-align: center;
 }
 /*Deixa a tabela responsiva*/
 .responsive-table {
-  max-width: 64rem;
-  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
 /*coloca o padding em porcentagem para a tabela se ajustar automaticamente*/
 .especie-table tbody td,
 .especie-table thead th {
-  padding: 5% 10%;
+  padding: 1rem;
 }
 /*deixa o conteúdo vazado apenas no ultimo elemento da tabela*/
 .last-coluwn {
@@ -371,12 +373,15 @@ address {
 .especie-table {
   background-color: hsl(126, 40%, 20%);
   border-spacing: 0;
+  border: 0.5rem solid white;
 }
 /*Fonte dos titulos da tabela*/
 .especie-table th {
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
+  color: var(--secoudary-color);
 }
+
 /*Coloca outra tonalidade de cor nas linhas pares da tabela*/
 .especie-table tr:nth-child(even),
 thead {
@@ -477,6 +482,7 @@ body .full-width {
   justify-content: center;
   align-items: center;
   padding-top: var(--gap);
+  text-align: center;
 }
 
 .github {

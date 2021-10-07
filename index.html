@@ -15,8 +15,13 @@
     <link rel="stylesheet" href="assets/_css/style.css" />
     <link
       rel="stylesheet"
-      href="assets/_css/mobile.css"
+      href="assets/_css/tablet.css"
       media="screen and (max-width: 800px)"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/_css/mobile.css"
+      media="screen and (max-width: 562px)"
     />
     <title>Adote Uma Tartaruga</title>
   </head>
@@ -338,38 +343,42 @@
             </caption>
 
             <thead>
-              <th>Nome da Tartaruga</th>
+              <th>Nome</th>
               <th>Tipo</th>
               <th>Região</th>
             </thead>
 
             <tbody>
               <tr>
-                <td>jabuti-piranga</td>
-                <td>Jabuti</td>
-                <td class="last-coluwn">
+                <td data-title="Nome">jabuti-piranga</td>
+                <td data-title="Tipo">Jabuti</td>
+                <td data-title="Regiao" class="last-coluwn">
                   Norte,Nordeste,Centroeste,sul e sudeste
                 </td>
               </tr>
 
               <tr>
-                <td>jabuti-tinga</td>
-                <td>Jabuti</td>
-                <td class="last-coluwn">Norte,Nordeste e Centroeste</td>
-              </tr>
-
-              <tr>
-                <td>Tartaruga Tigre d'agua</td>
-                <td>Cagado</td>
-                <td class="last-coluwn">
-                  Rio Grande do Sul, Uruguai, Argentina
+                <td data-title="Nome">jabuti-tinga</td>
+                <td data-title="Tipo">Jabuti</td>
+                <td data-title="Regiao" class="last-coluwn">
+                  Norte,Nordeste e Centroeste
                 </td>
               </tr>
 
               <tr>
-                <td>Tartaruga da Madeira</td>
-                <td>Jabuti</td>
-                <td class="last-coluwn">America do norte</td>
+                <td data-title="Nome">Tartaruga Tigre d'agua</td>
+                <td data-title="Tipo">Cagado</td>
+                <td data-title="Regiao" class="last-coluwn">
+                  Rio Grande do Sul, Uruguai, Argentina
+                </td>
+              </tr>
+
+              <tr class="last-line">
+                <td data-title="Nome">Tartaruga da Madeira</td>
+                <td data-title="Tipo">Jabuti</td>
+                <td data-title="Regiao" class="last-coluwn">
+                  America do norte
+                </td>
               </tr>
             </tbody>
           </table>

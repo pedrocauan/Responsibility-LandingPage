@@ -1,115 +1,49 @@
-/*Deixando o font-size do html mais confortável*/
+/*========= Arrumando tabela no mobile ============*/
+
 html {
-  font-size: 55%;
+  font-size: 40%;
 }
 
-/*Quebra as grids, deixa elas com 1 coluna*/
-.intro-content,
-.grid {
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-/*Deixa a tartaruga antes do texto*/
-.intro-text-content {
-  order: 2;
-  margin-top: 0;
-  text-align: center;
-}
-
-/*Diminuindo o tamanho da imagem*/
-.intro-img img {
-  min-width: 20rem;
-  min-height: 20rem;
-  max-width: 40rem;
-  max-height: 40rem;
-  width: 100%;
-}
-
-.image {
-  width: 100%;
-  min-width: 100%;
-  max-height: 100%;
-}
-
-/*Deixando as imagens da galeria ocupando toda a largura da tela*/
-.grid .image img {
-  width: 100%;
-}
-
-/*Arrumando formulário*/
-#contact .intro-img,
-#contact .intro-img img {
-  display: none; /*Some com a tartaruga*/
-}
-
-#contact .intro-text-content {
-  order: 1; /*Deixa  o titulo antes do formulário*/
-  margin-top: 8rem;
-}
-
-#contact .contact-form {
-  order: 2;
-}
-
-/*======= MENU MOBILE ==============*/
-.menu {
-  bottom: 0;
-  display: none;
-}
-/*Centraliza os elementos do menu*/
-.menu-content,
-.menu-content ul {
-  flex-direction: column;
-  align-items: center;
+/*Alinha ao centro*/
+.responsive-table {
   justify-content: center;
-  gap: 0;
 }
 
-.menu-content {
-  min-height: 100vh;
+/*Ajusta as bordas da tabela */
+.especie-table td ~ td {
+  border-left: 0;
 }
 
-.logo {
-  width: auto;
+.especie-table tr > .last-coluwn {
+  border-bottom: 0.5rem solid white;
 }
 
-.close-menu {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
+.especie-table .last-line .last-coluwn {
+  border-bottom: 0;
 }
 
-.close-menu-label::after {
-  content: '≡';
-  position: fixed;
-  z-index: 2;
-  top: 2rem;
-  right: 2rem;
-  background-color: white;
-  color: var(--primary-color);
-  font-size: 3rem;
-  line-height: 3rem;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
-.close-menu:checked ~ .menu {
-  display: block;
-}
-
-.close-menu:checked ~ .menu {
-  display: block;
-}
-
-.close-menu:checked ~ .close-menu-label::after {
-  display: block;
-  content: 'x';
-}
-
-.menu-space {
+/*Remove os titulos*/
+.especie-table th {
   display: none;
+}
+
+/*Cria varias tabelas*/
+.especie-table td {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Coloca os os titulos novamente com o data-title*/
+.especie-table td::before {
+  content: attr(data-title);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--secoudary-color);
+  padding: 1.6rem;
+}
+
+/*=== Ajustando intro ==*/
+/*Cola a tartaruga com o titulo*/
+.intro-content {
+  align-content: center;
 }
