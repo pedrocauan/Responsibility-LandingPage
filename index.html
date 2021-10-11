@@ -34,12 +34,12 @@
       class="close-menu"
       aria-label="fecha o menu"
       role="button"
+      aria-pressed="true"
     />
     <label
       for="close-menu"
       class="close-menu-label"
       title="fecha o menu"
-      ch
     ></label>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
@@ -342,9 +342,11 @@
             </caption>
 
             <thead>
-              <th>Nome</th>
-              <th>Tipo</th>
-              <th>Região</th>
+              <tr>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Região</th>
+              </tr>
             </thead>
 
             <tbody>
@@ -447,7 +449,7 @@
 
             <!--MENSAGEM-->
             <div class="form-group full-width">
-              <label for="menssage">Mensagem</label>
+              <label for="message">Mensagem</label>
               <textarea
                 name="message"
                 id="message"
